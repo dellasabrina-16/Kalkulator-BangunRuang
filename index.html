@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangun Ruang</title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <nav id="navbar-example2" class="navbar px-3 fixed-top" style="background-color: #e3f2fd;">
+    
+    <a class="navbar-brand h4 shadow rounded" href="#">Kalkulator Bangun Ruang</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#kubus">Kubus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Tabung">Tabung</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Bola">Bola</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Limas">Limas</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="bg-body-tertiary ">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img class="img-fluid mt-5" src="img/story set.png" alt="" width="70%">
+        </div>
+        <div class="col-md-6">
+          <h2 class="mt-5">Apa Itu Bangun Ruang ?</h2>
+          <p>Bangun Ruang adalah bangun tiga dimensi yang mempunyai volume atau isi. Volume tersebut dapat
+            diketahui
+            dengan <b>rumus</b> bangun ruang sesuai jenisnya.</p>
+          <p>Terdapat 3 rumus bangun ruang yang harus dipelajari, yaitu rumus volume, keliling, dan luas
+            permukaan.
+          </p>
+          <p>Ada banyak jenis bangun ruang, namun disini kita hanya akan belajar 4 jenis bangun ruang yaitu :
+          <ol>
+            <li>Kubus</li>
+            <li>Tabung</li>
+            <li>Bola</li>
+            <li>Limas</li>
+          </ol>
+          </p>
+          <!--<div class="d-flex justify-content-center">-->
+          <a class="btn btn-outline-primary" href="https://youtu.be/FiT3L0PlmX8?si=EB91HeQ0dxwAkDow" role="button">Video
+            Penjelasan</a>
+        </div>
+      </div>
+
+
+      <div class="h3 text-center pt-5">Menghitung Volume, Luas Permukaan, & Keliling Bangun Ruang</div>
+      <hr>
+
+      <div class="row my-5">
+        <div class="col">
+          <div class="card shadow bg-secondary-subtle bg-opacity-50">
+            <div class="card-body">
+              <div class="fw-bold text-center">
+                Apa itu Volume Bangun Ruang
+              </div>
+              Volume bangun ruang adalah banyaknya isi ruang yang digunakan oleh suatu bangun dan disimbolkan dengan
+              huruf V. Satuan yang digunakan yaitu meter kubik; misalnya cm³.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow bg-secondary-subtle bg-opacity-50">
+            <div class="card-body">
+              <div class="fw-bold text-center">
+                Apa itu Luas Permukaan Bangun Ruang
+              </div>
+              Luas permukaan bangun ruang adalah total seluruh luas yang menutupi isi suatu bangun ruang dan disimbolkan
+              dengan huruf L. Satuan yang digunakan yaitu meter kuadrat; misalnya cm².
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow bg-secondary-subtle bg-opacity-50 ">
+            <div class="card-body">
+              <div class="fw-bold text-center">
+                Apa itu Keliling Bangun Ruang
+              </div>
+              Keliling suatu bangun adalah ukuran panjang garis luar bangun, untuk menemukan keliling suatu
+              bangun kita perlu menjumlahkan panjang semua sisinya. Satuan yang digunakan seperti cm.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+        <h4 id="kubus">1. Kubus</h4>
+        <div class="   mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid shadow rounded-5" src="img/kubus.png" alt="">
+            </div>
+            <div class="col-md-8">
+              <p class="pt-2 pb-1">Kubus adalah bangun ruang yang terdiri atas enam sisi yang berbentuk persegi dan
+                memiliki 12 rusuk. Contoh benda berbentuk kubus adalah rubik dan dadu.</p>
+              <div class="bg-info-subtle rounded-5 py-3 px-4">
+                <p class="fw-bold">Sifat Kubus :</p>
+                <ul>
+                  <li>Kubus memiliki 12 diagonal sisi / diagonal bidang,</li>
+                  <li>Kubus memiliki 4 diagonal ruang,</li>
+                  <li>Kubus memiliki 6 buah bidang diagonal berbentuk persegi panjang.</li>
+                </ul>
+              </div>
+              <div class="row py-4 px-4">
+                <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+                  Volume = s³
+                </div>
+                <div class="col-md-4 alert alert-danger fw-semibold text-center mx-3" role="alert">
+                  Luas Permukaan = 6 x s²
+                </div>
+                <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+                  Keliling = 12 x s
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header text-center bg-primary-subtle">
+              <p class="fw-bolder mt-3">Coba Hitung Bangun Ruang Kamu !</p>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">Sisi</label>
+                <div class="col-sm-10">
+                  <input type="number" id="sisi" placeholder="Masukkan sisi (cm)" class="form-control">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button " class="btn btn-primary mt-3" onclick="Volume()">Volume</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="LuasPermukaan()">Luas Permukaan</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="Keliling()">Keliling</button>
+              </div>
+              <hr>
+              <h6 class="text-center " id="tampilkanCara1"></h6>
+              <h6 class="text-center " id="tampilkanHitung1"></h6>
+              <h6 class="text-center text-primary" id="tampilkanHasil1"></h6>
+              <h5 class="text-center" id="tampilkanKeterangan1"></h5>
+
+              <script type="text/javascript">
+                function Volume() {
+                  const sisi = $('#sisi').val()
+         
+                 console.log(sisi);
+                  const hasil = parseInt(sisi) * parseInt(sisi) * parseInt(sisi)
+                  console.log("Volume kubus = " + hasil + " cm³");
+                  $("#tampilkanCara1").html("V = s³");
+                  $("#tampilkanHitung1").html("V = " + sisi + "³ ");
+                  $("#tampilkanHasil1").html("V = " + hasil + " cm³");
+                  $("#tampilkanKeterangan1").html("Jadi volume kubus dengan sisi " + sisi + " cm, adalah " + hasil + " cm³.");
+                }
+
+                function LuasPermukaan() {
+                  const sisi = $('#sisi').val()
+                  console.log(sisi);
+                  const hasil = parseInt(6) * parseInt(sisi) * parseInt(sisi)
+                  console.log("Luas Permukaan kubus = " + hasil + " cm²");
+                  $("#tampilkanCara1").html("Luas Permukaan = 6 x s²");
+                  $("#tampilkanHitung1").html("Luas Permukaan = 6 x " + sisi + "²");
+                  $("#tampilkanHasil1").html("Luas Permukaan = " + hasil + " cm²")
+                  $("#tampilkanKeterangan1").html("Jadi luas permukaan kubus dengan sisi " + sisi + " cm, adalah " + hasil + " cm².");
+                }
+
+                function Keliling() {
+                  const sisi = $('#sisi').val()
+                  console.log(sisi);
+                  const hasil = parseInt(12) * parseInt(sisi)
+                  console.log("Keliling kubus " + hasil + " cm");
+                  $("#tampilkanCara1").html("Keliling = 12 x s");
+                  $("#tampilkanHitung1").html("Keliling = 12 x " + sisi);
+                  $("#tampilkanHasil1").html("Keliling = " + hasil + " cm")
+                  $("#tampilkanKeterangan1").html("Jadi keliling kubus dengan sisi " + sisi + " cm, adalah " + hasil + " cm.");
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+
+
+        <h4 id="Tabung">2. Tabung</h4>
+        <div class="   mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid shadow rounded-5" src="img/tabung.png" alt="">
+            </div>
+            <div class="col-md-8">
+              <p class="pt-2 pb-1">Tabung adalah salah satu bentuk ruang yang sering kita temui dalam kehidupan
+                sehari-hari. Tabung memiliki dua tutup di kedua ujungnya dan dinding yang melengkung membentuk permukaan
+                samping yang datar. Contoh benda berbentuk tabung adalah celengan, kaleng cat, dan baterai.</p>
+              <div class="bg-info-subtle rounded-5 py-3 px-4">
+                <p class="fw-bold">Sifat Tabung :</p>
+                <ul>
+                  <li>Memiliki 3 sisi, yaitu sisi alas, sisi tutup,dan selimut,</li>
+                  <li>Memiliki 2 rusuk,</li>
+                  <li>Tidak memiliki titik sudut,</li>
+                  <li>Sisi alas dan tutup berbentuk llingkaran berukuran sama,</li>
+                  <li>Jarak antara sisi alas dan tutup disebut tinggi tabung.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+              Volume = 𝜋 x r² x t
+            </div>
+            <div class="col-md-4 alert alert-danger fw-semibold text-center mx-3" role="alert">
+              Luas Permukaan = 𝜋 x r²
+            </div>
+            <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+              Keliling Alas/Tutup = 2 x 𝜋 x r
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header text-center bg-primary-subtle">
+              <p class="fw-bolder mt-3">Coba Hitung Bangun Ruang Kamu !</p>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">Jari-jari (r)</label>
+                <div class="col-sm-10">
+                  <input type="number" id="r" placeholder="Masukkan Jari-jari (cm)" class="form-control">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label class="col-sm-2 col-form-label">Tinggi (t)</label>
+                <div class="col-sm-10">
+                  <input type="number" id="t" placeholder="Masukkan Tinggi (cm)" class="form-control">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button " class="btn btn-primary mt-3" onclick="Volume2()">Volume</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="LuasPermukaan2()">Luas Permukaan</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="Keliling2()">Keliling</button>
+              </div>
+              <hr>
+              <h6 class="text-center " id="tampilkanCara2"></h6>
+              <h6 class="text-center " id="tampilkanHitung2"></h6>
+              <h6 class="text-center text-primary" id="tampilkanHasil2"></h6>
+              <h5 class="text-center" id="tampilkanKeterangan2"></h5>
+
+              <script type="text/javascript">
+                function Volume2() {
+                  const r = $('#r').val()
+                  console.log(r);
+                  const t = $('#t').val()
+                  console.log(t);
+                  const hasil = 22 / 7 * parseInt(r) * parseInt(r) * parseInt(t)
+                  console.log("Volume Tabung = " + hasil + " cm³");
+                  $("#tampilkanCara2").html("V = 𝜋 x r² x tinggi");
+                  $("#tampilkanHitung2").html("V = 22/7 x " + r + "² " + " x " + t);
+                  $("#tampilkanHasil2").html("V = " + hasil + " cm³");
+                  $("#tampilkanKeterangan2").html("Jadi volume tabung dengan jari-jari " + r + " cm dan tinggi " + t + " cm, adalah " + hasil + " cm³.");
+                }
+
+                function LuasPermukaan2() {
+                  const r = $('#r').val()
+                  console.log(r);
+                  const t = $('#t').val()
+                  console.log(t);
+                  const hasil = 22 / 7 * parseInt(r) * parseInt(r)
+                  console.log("Luas Permukaan tabung = " + hasil + " cm²");
+                  $("#tampilkanCara2").html("Luas Permukaan = 22/7 x r²");
+                  $("#tampilkanHitung2").html("Luas Permukaan = 22/7 x " + r + "²");
+                  $("#tampilkanHasil2").html("Luas Permukaan = " + hasil + " cm²")
+                  $("#tampilkanKeterangan2").html("Jadi luas permukaan tabung dengan jari-jari " + r + " cm dan tinggi " + t + " cm, adalah " + hasil + " cm².");
+                }
+
+                function Keliling2() {
+                  const r = $('#r').val()
+                  console.log(r);
+                  const t = $('#t').val()
+                  console.log(t);
+                  const hasil = 2 * 22 / 7 * parseInt(r)
+                  console.log("Keliling tabung " + hasil + " cm");
+                  $("#tampilkanCara2").html("Keliling = 2 x 22/7 x r");
+                  $("#tampilkanHitung2").html("Keliling = 2 x 22/7 x " + r);
+                  $("#tampilkanHasil2").html("Keliling = " + hasil + " cm")
+                  $("#tampilkanKeterangan2").html("Jadi keliling alas atau tutup tabung dengan jari-jari " + r + " cm dan tinggi " + t + " cm, adalah " + hasil + " cm.");
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+
+
+        <h4 id="Bola">3. Bola</h4>
+        <div class="   mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid shadow rounded-5" src="img/bola.png" alt="">
+            </div>
+            <div class="col-md-8">
+              <p class="pt-2 pb-1">Bola adalah bangun ruang tiga dimensi yang dibentuk oleh tak hingga lingkaran
+                berjari-jari sama panjang dan berpusat pada satu titik yang sama. Ada banyak benda maupun makanan
+                berbentuk bola dikehidupan ini, seperti bola basket dan bakso.</p>
+              <div class="bg-info-subtle rounded-5 py-3 px-4">
+                <p class="fw-bold">Sifat Bola :</p>
+                <ul>
+                  <li>Tidak memiliki titik sudut dan titik pusat,</li>
+                  <li>Memiliki satu buah sisi,</li>
+                  <li>Mempunyai jari-jari yang tidak terhingga dan sama panjangnya.</li>
+                </ul>
+              </div>
+              <div class="row my-3 ">
+                <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+                  Volume = 4/3 . 𝜋 . r³
+                </div>
+                <div class="col-md-4 alert alert-danger fw-semibold text-center mx-3" role="alert">
+                  Luas Permukaan = 4 . 𝜋 . r²
+                </div>
+                <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+                  Keliling = 4/3 . 𝜋 . r²
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header text-center bg-primary-subtle">
+              <p class="fw-bolder mt-3">Coba Hitung Bangun Ruang kamu !</p>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">Jari-jari (r)</label>
+                <div class="col-sm-10">
+                  <input type="number" id="rBola" placeholder="Masukkan Jari-jari (cm)" class="form-control">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button " class="btn btn-primary mt-3" onclick="Volume3()">Volume</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="LuasPermukaan3()">Luas Permukaan</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="Keliling3()">Keliling</button>
+              </div>
+              <hr>
+              <h6 class="text-center " id="tampilkanCara3"></h6>
+              <h6 class="text-center " id="tampilkanHitung3"></h6>
+              <h6 class="text-center text-primary" id="tampilkanHasil3"></h6>
+              <h5 class="text-center" id="tampilkanKeterangan3"></h5>
+
+              <script type="text/javascript">
+                function Volume3() {
+                  const rBola = $('#rBola').val()
+                  console.log(rBola);
+                  const hasil = 4 / 3 * 22 / 7 * parseInt(rBola) * parseInt(rBola) * parseInt(rBola)
+                  console.log("Volume bola = " + hasil + " cm³");
+                  $("#tampilkanCara3").html("V = 4/3 x 𝜋 x r³");
+                  $("#tampilkanHitung3").html("V = 4/3 x 22/7 x " + rBola + "³ ");
+                  $("#tampilkanHasil3").html("V = " + hasil + " cm³");
+                  $("#tampilkanKeterangan3").html("Jadi volume bola dengan jari-jari " + rBola + " cm, adalah " + hasil + " cm³.");
+                }
+
+                function LuasPermukaan3() {
+                  const rBola = $('#rBola').val()
+                  console.log(rBola);
+                  const hasil = 4 * 22 / 7 * parseInt(rBola) * parseInt(rBola)
+                  console.log("Luas Permukaan bola = " + hasil + " cm²");
+                  $("#tampilkanCara3").html("Luas Permukaan = 4 x 22/7 x r²");
+                  $("#tampilkanHitung3").html("Luas Permukaan = 4 x 22/7 x " + rBola + "²");
+                  $("#tampilkanHasil3").html("Luas Permukaan = " + hasil + " cm²")
+                  $("#tampilkanKeterangan3").html("Jadi luas permukaan bola dengan jari-jari " + rBola + " cm, adalah " + hasil + " cm².");
+                }
+
+                function Keliling3() {
+                  const rBola = $('#rBola').val()
+                  console.log(rBola);
+                  const hasil = 4 / 3 * 22 / 7 * parseInt(rBola) * parseInt(rBola)
+                  console.log("Keliling bola = " + hasil + " cm²");
+                  $("#tampilkanCara3").html("Keliling = 4/3 x 22/7 x r²");
+                  $("#tampilkanHitung3").html("Keliling = 4/3 x 22/7 x " + rBola + "²");
+                  $("#tampilkanHasil3").html("Keliling = " + hasil + " cm²")
+                  $("#tampilkanKeterangan3").html("Jadi keliling bola dengan jari-jari " + rBola + " cm, adalah " + hasil + " cm.");
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <h4 id="Limas">4. Limas Segi Empat</h4>
+        <div class="   mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid shadow rounded-5" src="img/limas.png" alt="">
+            </div>
+            <div class="col-md-8">
+              <p class="pt-2 pb-1">Limas Segi Empat adalah sebuah bangun ruang (tiga dimensi) yang memiliki alas beruoa
+                poligon, dengan sisi berbentuk segitiga dan memiliki puncah. Contoh benda benbentuk limas segi empat
+                adalah piramida dan menara eiffel.</p>
+              <div class="bg-info-subtle rounded-5 py-3 px-4">
+                <p class="fw-bold">Sifat Limas Segi Empat :</p>
+                <ul>
+                  <li>Mempunyai 5 buah sisi(1 sisi alas dan 4 sisi tegak),</li>
+                  <li>Sisi alas berbentuk segi empat,</li>
+                  <li>4 sisi tegak berbentuk segitiga,</li>
+                  <li>Mempunyai 5 titik sudut,</li>
+                  <li>Mempunyai 8 rusuk.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="row pt-3 px-4">
+            <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+              Volume = 1/3 x (s x s) x t
+            </div>
+            <div class="col-md-4 alert alert-danger fw-semibold text-center mx-3" role="alert">
+              Luas Permukaan = L. alas + (4 x L. segitiga)
+            </div>
+            <div class="col-md-3 alert alert-danger fw-semibold text-center mx-3" role="alert">
+              Keliling = 4 x s x panjang rusuk
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header text-center bg-primary-subtle">
+              <p class="fw-bolder mt-3">Coba Hitung Bangun Ruang Kamu !</p>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">Luas Segitiga</label>
+                <div class="col-sm-10">
+                  <input type="number" id="LS" placeholder="Masukkan luas segitiga (luas sisi tegak)"
+                    class="form-control">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label class="col-sm-2 col-form-label">Panjang Rusuk</label>
+                <div class="col-sm-10">
+                  <input type="number" id="P" placeholder="Masukkan panjang rusuk segitiga" class="form-control">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label class="col-sm-2 col-form-label">Tinggi</label>
+                <div class="col-sm-10">
+                  <input type="number" id="T" placeholder="Masukkan tinggi" class="form-control">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label class="col-sm-2 col-form-label">Sisi Alas</label>
+                <div class="col-sm-10">
+                  <input type="number" id="S" placeholder="Masukkan sisi alas" class="form-control">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button " class="btn btn-primary mt-3" onclick="Volume4()">Volume</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="LuasPermukaan4()">Luas Permukaan</button>
+                <button type="button " class="btn btn-primary mt-3" onclick="Keliling4()">Keliling</button>
+              </div>
+              <hr>
+              <h6 class="text-center " id="tampilkanCara4"></h6>
+              <h6 class="text-center " id="tampilkanHitung4"></h6>
+              <h6 class="text-center text-primary" id="tampilkanHasil4"></h6>
+              <h5 class="text-center" id="tampilkanKeterangan4"></h5>
+
+              <script type="text/javascript">
+                function Volume4() {
+                  const S = $('#S').val()
+                  console.log(S);
+                  const T = $('#T').val()
+                  console.log(T);
+                  const hasil = 1 / 3 * parseInt(T) * (parseInt(S) * parseInt(S))
+                  console.log("Volume limas segi empat = " + hasil + " cm³");
+                  $("#tampilkanCara4").html("V = 1/3 x L. alas x t");
+                  $("#tampilkanHitung4").html("V = 1/3 x (" + S + " x " + S + ") x " + T);
+                  $("#tampilkanHasil4").html("V = " + hasil + " cm³");
+                  $("#tampilkanKeterangan4").html("Jadi volume limas segi empat dengan sisi " + S + " cm dan tinggi " + T + " cm, adalah " + hasil + "cm³.");
+                }
+
+                function LuasPermukaan4() {
+                  const S = $('#S').val()
+                  console.log(S);
+                  const LS = $('#LS').val()
+                  console.log(LS);
+                  const hasil = parseInt(S) * parseInt(S) + (4 * parseInt(LS))
+                  console.log("Luas Permukaan limas segi empat = " + hasil + " cm²");
+                  $("#tampilkanCara4").html("Luas Permukaan = L. alas + (4 x L. segitiga)");
+                  $("#tampilkanHitung4").html("Luas Permukaan = (" + S + " x " + S + ") + (4 x " + LS + ")");
+                  $("#tampilkanHasil4").html("Luas Permukaan = " + hasil + " cm²")
+                  $("#tampilkanKeterangan4").html("Jadi luas permukaan limas segi empat dengan sisi " + S + " cm dan luas segitiga " + LS + " cm², adalah " + hasil + " cm².");
+                }
+
+                function Keliling4() {
+                  const S = $('#S').val()
+                  console.log(S);
+                  const P = $('#P').val()
+                  console.log(P);
+                  const hasil = 4 * parseInt(S) * parseInt(P)
+                  console.log("Keliling limas segi empat " + hasil + " cm");
+                  $("#tampilkanCara4").html("Keliling = 4 x s x panjang rusuk");
+                  $("#tampilkanHitung4").html("Keliling = 4 x " + S + " x " + P);
+                  $("#tampilkanHasil4").html("Keliling = " + hasil + " cm")
+                  $("#tampilkanKeterangan4").html("Jadi keliling limas segi empat dengan sisi " + S + " cm dan panjang rusuk " + P + " cm, adalah " + hasil + " cm.");
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container  text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto ">
+          <img class="img-fluid rounded" src="img/Bangun Ruang (1).png" alt="">
+
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-5">
+          <h3>Kalkulator Bangun Ruang</h3>
+          <p><i class="fa-regular fa-envelope" style="color: #74C0FC;"></i> KalkulatorBR@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume" style="color: #74C0FC;"></i> (+62) 822-3130-0513</p>
+          <p><i class="fa-brands fa-square-x-twitter" style="color: #74C0FC;"></i> BANGUNRuang.real</p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-5">
+          <h5 class="text-uppercase mb-4 fw-bold text-bg-primary">Menu</h5>
+          <ul>
+            <li>Kubus</li>
+            <li>Tabung</li>
+            <li>Bola</li>
+            <li>Limas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center fw-bold pt-4 mb-2">© Della Sabrina Indah Putri - 11 RPL 1</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
